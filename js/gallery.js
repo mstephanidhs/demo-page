@@ -25,3 +25,6 @@ function unDo() {
   imageContainer.style.backgroundImage = `url('')`;
   imageContainer.innerHTML = imageContainerPlaceholderText;
 }
+
+const images = [...document.getElementsByTagName('img')];
+images.forEach((img) => img.setAttribute('tabindex', 0));
